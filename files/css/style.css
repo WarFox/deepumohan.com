@@ -1,0 +1,73 @@
+/*
+    Document   : style
+    Created on : May 30, 2011, 9:04:55 PM
+    Author     : Deepu Mohan P
+    Description:
+        Purpose of the stylesheet socials.
+*/
+
+/*
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root {margin: 0; padding: 0;display: block;}
+
+body {border-top: 3px solid #255E6E; background-color:#d1e5e3;background-image: url('images/Deepu_Mohan_P.gif');background-repeat: no-repeat; background-position: left; background-attachment: scroll;background-position: 5px 50px;}
+
+div {margin: 0px;padding: 0px;}
+div.rt {float: right;}
+div.lt {float: left;}
+
+ul {display:inline;padding:0px}
+li {list-style-type: none; display: inline;}
+
+/*h2 {background-color: #C0C0FF ;margin-top: 10px;margin-bottom: 0px;cursor: pointer;padding: 1px 3px;}*/
+
+a{font-family:'lucida grande',tahoma,verdana,arial,sans-serif;font-size: 11px;font-variant: normal;font-style: normal;font-weight: normal;color: #ffffff ;text-decoration: none;}
+
+p.quote {font-family: 'Dancing Script', arial, serif; font-size: 16px;background-color: #CCC;border: 1px black solid;padding:5px;}
+/*p.box {background: #DEDEFF; border: solid #C0C0FF; border-width: 0px 3px 3px 3px; margin-top: 0px; padding: 3px; text-align: justify;overflow: hidden;}*/
+p.box { border: 1px solid #cccccc; border-top: 4px solid #c55; padding: 1em 2em; margin-bottom: 2em; background-color:#ffffff}
+
+footer {z-index: 2;background-color: #1f6565; color:#ffffff;min-height: 100px !important; height:50px; padding-left:1em;padding-right:1em;margin-top:1em;padding-top:1em;font-size: 11px;}
+
+
+#main {min-height: 535px !important; height:535px; margin-top: 1em;}
+/*#footer {bottom: 1em; left:1em;z-index: 2;background-color: #1f6565; color:#ffffff;min-height: 100px !important; height:50px; padding-left:1em;padding-right:1em;margin-top:1em;padding-top:1em;font-size: 11px;}*/
+#social_table td a div{height:48px;width:48px;background-image:url(images/social-sprite.png?2)}
+.social-facebook{background-position:0 0}
+.social-twitter{background-position: -64px 0}
+.social-igoogle{background-position: -128px 0}
+.social-feed{background-position: -192px 0}
+.social-buzz{background-position:0 -64px}
+.social-yahoo{background-position: -64px -64px}
+.social-email{background-position: -128px -64px}
+.social-iphone{background-position: -192px -64px}
+.social-linkedin{background-position:0 -128px}
+.social-tumblr{background-position: -64px -128px}
+.social-blogger{background-position: -128px -128px}
+
+.clear { display: block; clear: both; visibility: hidden;}
+
+a{
+   color:#000;
+   -webkit-transition:color .3s ease-in;
+   -moz-transition:color .3s ease-in;
+   -o-transition:color .3s ease-in;
+   transition:color .3s ease-in;
+}
+
+a:hover{
+   color:#FFF;
+}
+
+.imagedropshadow {
+	padding: 0px;
+	/*border: solid 1px #EFEFEF;*/
+}
+a:hover div.imagedropshadow {
+	border: solid 1px #CCC;
+	-moz-box-shadow: 1px 1px 2px 1px #999;
+	-webkit-box-shadow: 1px 2px 1px 1px #999;
+        box-shadow: 1px 2px 1px 1px #999;
+}
