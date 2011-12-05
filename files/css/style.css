@@ -29,7 +29,7 @@ p.quote {font-family: 'Dancing Script', arial, serif; font-size: 16px;background
 /*p.box {background: #DEDEFF; border: solid #C0C0FF; border-width: 0px 3px 3px 3px; margin-top: 0px; padding: 3px; text-align: justify;overflow: hidden;}*/
 p.box { border: 1px solid #cccccc; border-top: 4px solid #c55; padding: 1em 2em; margin-bottom: 2em; background-color:#ffffff}
 
-footer {z-index: 2;background-color: #1f6565; color:#ffffff;min-height: 100px !important; height:50px; padding-left:1em;padding-right:1em;margin-top:1em;padding-top:1em;font-size: 11px;}
+footer {z-index: 2;background-color: #1f6565; color:#ffffff;padding-left:1em;padding-right:1em;margin-top:1em;padding-top:1em;font-size: 11px;}
 
 
 #main {min-height: 535px !important; height:535px; margin-top: 1em;}
