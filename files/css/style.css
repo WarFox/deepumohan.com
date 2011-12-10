@@ -10,9 +10,12 @@
    Syntax recommendation http://www.w3.org/TR/REC-CSS2/
 */
 
+/*font import*/
+@import url(http://fonts.googleapis.com/css?family=Cagliostro);
+
 root {margin: 0; padding: 0;display: block;}
 
-body {border-top: 3px solid #255E6E; background-color:#d1e5e3;background-image: url('images/Deepu_Mohan_P.gif');background-repeat: no-repeat; background-position: left; background-attachment: scroll;background-position: 5px 50px;}
+body {border-top: 3px solid #255E6E; background-color:#d1e5e3;background-image: url('images/Deepu_Mohan_P.gif');background-repeat: no-repeat; background-position: left; background-attachment: scroll;background-position: 5px 50px; font-family:'Cagliostro'}
 
 div {margin: 0px;padding: 0px;}
 div.rt {float: right;}
@@ -46,6 +49,7 @@ footer {z-index: 2;background-color: #1f6565; color:#ffffff;padding-left:1em;pad
 .social-linkedin{background-position:0 -128px}
 .social-tumblr{background-position: -64px -128px}
 .social-blogger{background-position: -128px -128px}
+.social-github{background-position: -192px -128px}
 
 .clear { display: block; clear: both; visibility: hidden;}
 
