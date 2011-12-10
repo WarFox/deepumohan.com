@@ -5,9 +5,9 @@
         <meta name="description" content="Personal Website of Deepu Mohan Puthrote, a Technology enthusiast" />
         <meta name="keywords" content="Deepu,Mohan,Puthrote,Deepu Mohan, Deepu Puthrote, Mohan Puthrote, Deepu Mohan Puthrote" />
         <meta name="author" content="Deepu Mohan Puthrote" />
+	<meta name="copyright" content="Deepu Mohan Puthrote" />
 	<meta name="classification" content="public" />
 	<meta name="resource-type" content="document" />
-	<meta name="copyright" content="Deepu Mohan Puthrote" />
 
         <meta http-equiv="X-UA-Compatible" content="chrome=1">
 

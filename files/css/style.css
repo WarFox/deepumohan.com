@@ -24,7 +24,7 @@ div.lt {float: left;}
 ul {display:inline;padding:0px}
 li {list-style-type: none; display: inline;}
 
-/*h2 {background-color: #C0C0FF ;margin-top: 10px;margin-bottom: 0px;cursor: pointer;padding: 1px 3px;}*/
+h1 {cursor: pointer; padding:0; margin:0;}
 
 a{font-family:'lucida grande',tahoma,verdana,arial,sans-serif;font-size: 11px;font-variant: normal;font-style: normal;font-weight: normal;color: #ffffff ;text-decoration: none;}
 
@@ -32,7 +32,7 @@ p.quote {font-family: 'Dancing Script', arial, serif; font-size: 16px;background
 /*p.box {background: #DEDEFF; border: solid #C0C0FF; border-width: 0px 3px 3px 3px; margin-top: 0px; padding: 3px; text-align: justify;overflow: hidden;}*/
 p.box { border: 1px solid #cccccc; border-top: 4px solid #c55; padding: 1em 2em; margin-bottom: 2em; background-color:#ffffff}
 
-footer {z-index: 2;background-color: #1f6565; color:#ffffff;padding-left:1em;padding-right:1em;margin-top:1em;padding-top:1em;font-size: 11px;}
+footer {z-index: 2;background-color: #1f6565; color:#ffffff;}
 
 
 #main {min-height: 535px !important; height:535px; margin-top: 1em;}
@@ -50,6 +50,8 @@ footer {z-index: 2;background-color: #1f6565; color:#ffffff;padding-left:1em;pad
 .social-tumblr{background-position: -64px -128px}
 .social-blogger{background-position: -128px -128px}
 .social-github{background-position: -192px -128px}
+
+.github-32x32{background-image:url(images/octocat_32x32.png?2)}}
 
 .clear { display: block; clear: both; visibility: hidden;}
 
