@@ -1,17 +1,15 @@
 ﻿<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
+        <title>Personal Website of Deepu Mohan Puthrote | A Technology enthusiast</title>    
+        <meta charset="utf-8"/>
         <meta name="description" content="Personal Website of Deepu Mohan Puthrote, a Technology enthusiast" />
-        <meta name="keywords" content="Deepu,Mohan,Puthrote,Deepu Mohan, Deepu Puthrote, Mohan Puthrote, Deepu Mohan Puthrote" />
+        <meta name="keywords" content="Deepu,Mohan,Puthrote,Deepu Mohan, Deepu Puthrote, Mohan Puthrote, Deepu Mohan Puthrote, Java Developer, Javascritpt Developer, Technology enthusiast" />
         <meta name="author" content="Deepu Mohan Puthrote" />
 	<meta name="copyright" content="Deepu Mohan Puthrote" />
 	<meta name="classification" content="public" />
 	<meta name="resource-type" content="document" />
-
         <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-        <title>Personal Website of Deepu Mohan Puthrote | A Technology enthusiast</title>
 
         <style type="text/css">@import url('files/css/style.css');</style>
 

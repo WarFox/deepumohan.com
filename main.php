@@ -13,7 +13,7 @@
     <div id="main">
         <div class="clear"></div>
         <div id="social">
-            <h1>deepu mohan puthorte</h1>
+            <h1>deepu mohan puthrote</h1>
             <ul class="social">
                     <li><a href="http://www.facebook.com/deepu.mohan.p" title="Deepu @ Facebook" ><img src="files/css/images/transparent.gif" class="social-facebook imagedropshadow" alt="Deepu @ Facebook"/></a></li>
                     <li><a href="http://www.twitter.com/deepumohanp" title="Deepu @ Twitter" ><img src="files/css/images/transparent.gif" class="social-twitter imagedropshadow" alt="Deepu @ Twitter"/></a></li>
