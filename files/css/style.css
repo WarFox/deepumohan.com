@@ -15,7 +15,7 @@
 
 root {margin: 0; padding: 0;display: block;}
 
-body {border-top: 3px solid #255E6E; background-color:#d1e5e3;background-image: url('images/Deepu_Mohan_P.gif');background-repeat: no-repeat; background-position: left; background-attachment: scroll;background-position: 5px 50px; font-family:'Cagliostro'}
+body {border-top: 3px solid #255E6E; background-color:#f6f6f6;background-image: url('images/grain.gif');background-repeat: initial; background-position: initial; background-attachment: fixed;background-position: 5px 50px; font-family:'Cagliostro'}
 
 div {margin: 0px;padding: 0px;}
 div.rt {float: right;}
