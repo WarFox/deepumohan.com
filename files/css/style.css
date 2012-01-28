@@ -1,7 +1,7 @@
 /*
     Document   : style
     Created on : May 30, 2011, 9:04:55 PM
-    Author     : Deepu Mohan P
+    Author     : Deepu Mohan Puthrote
     Description:
         Purpose of the stylesheet socials.
 */
@@ -21,41 +21,39 @@ div {margin: 0px;padding: 0px;}
 div.rt {float: right;}
 div.lt {float: left;}
 
-ul {display:inline;padding:0px}
-li {list-style-type: none; display: inline;}
-
 h1 {cursor: pointer; padding:0; margin:0;}
 
-a{font-family:'lucida grande',tahoma,verdana,arial,sans-serif;font-size: 11px;font-variant: normal;font-style: normal;font-weight: normal;color: #ffffff ;text-decoration: none;}
+a{font-family:'Cagliostro','lucida grande',tahoma,verdana,arial,sans-serif;font-size: 11px;font-variant: normal;font-style: normal;font-weight: normal;color: #ffffff ;text-decoration: none;}
 
 p.quote {font-family: 'Dancing Script', arial, serif; font-size: 16px;background-color: #CCC;border: 1px black solid;padding:5px;}
-/*p.box {background: #DEDEFF; border: solid #C0C0FF; border-width: 0px 3px 3px 3px; margin-top: 0px; padding: 3px; text-align: justify;overflow: hidden;}*/
+
 p.box { border: 1px solid #cccccc; border-top: 4px solid #c55; padding: 1em 2em; margin-bottom: 2em; background-color:#ffffff}
 
 footer {z-index: 2;background-color: #1f6565; color:#ffffff;}
 
-
 #main {min-height: 535px !important; height:535px; margin-top: 1em;}
-/*#footer {bottom: 1em; left:1em;z-index: 2;background-color: #1f6565; color:#ffffff;min-height: 100px !important; height:50px; padding-left:1em;padding-right:1em;margin-top:1em;padding-top:1em;font-size: 11px;}*/
-#social_table td a div{height:48px;width:48px;background-image:url(images/social-sprite.png?2)}
-.social-facebook{background-position:0 0}
-.social-twitter{background-position: -64px 0}
-.social-igoogle{background-position: -128px 0}
-.social-feed{background-position: -192px 0}
-.social-buzz{background-position:0 -64px}
-.social-yahoo{background-position: -64px -64px}
-.social-email{background-position: -128px -64px}
-.social-iphone{background-position: -192px -64px}
-.social-linkedin{background-position:0 -128px}
-.social-tumblr{background-position: -64px -128px}
-.social-blogger{background-position: -128px -128px}
-.social-github{background-position: -192px -128px}
 
-.github-32x32{background-image:url(images/octocat_32x32.png?2)}}
+ul.social {display:inline; padding:0}
+ul.social li {list-style-type: none;display:inline;padding:0}
+ul.social li a img {background-image:url(images/social-sprite.png?2);height:48px;width:48px;}
+.social-facebook {background-position:0 0;}
+.social-twitter {background-position: -64px 0;}
+.social-igoogle {background-position: -128px 0;}
+.social-feed {background-position: -192px 0}
+.social-buzz {background-position:0 -64px}
+.social-yahoo {background-position: -64px -64px}
+.social-email {background-position: -128px -64px}
+.social-iphone {background-position: -192px -64px}
+.social-linkedin {background-position:0 -128px}
+.social-tumblr {background-position: -64px -128px}
+.social-blogger {background-position: -128px -128px}
+.social-github {background-position: -192px -128px}
+
+.github-32x32 {background-image:url(images/octocat_32x32.png?2)}}
 
 .clear { display: block; clear: both; visibility: hidden;}
 
-a{
+a {
    color:#000;
    -webkit-transition:color .3s ease-in;
    -moz-transition:color .3s ease-in;
@@ -63,17 +61,15 @@ a{
    transition:color .3s ease-in;
 }
 
-a:hover{
-   color:#FFF;
-}
+a:hover { color:#FFF;}
 
-.imagedropshadow {
-	padding: 0px;
-	/*border: solid 1px #EFEFEF;*/
-}
-a:hover div.imagedropshadow {
-	border: solid 1px #CCC;
+.imagedropshadow { padding: 0; border: solid 1px #d1e5e3;}
+
+ul.social li a:hover img.imagedropshadow {
 	-moz-box-shadow: 1px 1px 2px 1px #999;
 	-webkit-box-shadow: 1px 2px 1px 1px #999;
-        box-shadow: 1px 2px 1px 1px #999;
+    box-shadow: 1px 2px 1px 1px #999;    
+   	border: solid 1px #CCC;
+    border-radius:5px 5px 5px 5px;-moz-border-radius:5px 5px 5px 5px;-webkit-border-radius:5px 5px 5px 5px;
 }
+
