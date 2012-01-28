@@ -9,9 +9,13 @@
         <loc>http://www.deepumohan.com/chromebook/</loc>
     </url>
     <url>
-        <loc>http://tips.deepumohan.com/</loc>
+        <loc>http://tech.deepumohan.com/</loc>
     </url>
     <url>
         <loc>http://blog.deepumohan.com/</loc>
-    </url>            
+    </url>
+    <url>
+        <loc>http://www.deepumohan.com/projects/word-count/</loc>
+    </url>                
 </urlset>
+
