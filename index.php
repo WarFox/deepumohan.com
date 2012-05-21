@@ -11,7 +11,8 @@
         <meta name="resource-type" content="document" />
         <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-        <style type="text/css">@import url('http://files.deepumohan.com/css/style.css');</style>
+        <!-- style type="text/css">@import url('http://files.deepumohan.com/css/style.css');</style -->
+        <style type="text/css">@import url('files/css/style.css');</style>
 
         <script type="text/javascript" charset="utf-8" src="http://files.deepumohan.com/js/jquery.js"></script>
         <script type="text/javascript" charset="utf-8" src="http://files.deepumohan.com/js/jquery.center.js"></script>
