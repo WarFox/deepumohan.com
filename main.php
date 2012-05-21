@@ -1,5 +1,5 @@
-    <div id="main">
-        <div class="clear"></div>
+    
+    <div id="main">        
         <div id="social">
             <h1>deepu mohan puthrote</h1>
             <ul class="social">

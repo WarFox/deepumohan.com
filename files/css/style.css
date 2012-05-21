@@ -15,11 +15,7 @@
 
 root {margin: 0; padding: 0;display: block;}
 
-body {border-top: 3px solid #255E6E; background-color:#f6f6f6;background-image: url('images/grain.gif');background-repeat: initial; background-position: initial; background-attachment: fixed;background-position: 5px 50px; font-family:'Cagliostro'}
-
-div {margin: 0px;padding: 0px;}
-div.rt {float: right;}
-div.lt {float: left;}
+body {background-color:#f6f6f6;background-image: url('images/grain.gif');background-repeat: initial; background-position: initial; font-family:'Cagliostro'}
 
 h1 {cursor: pointer; padding:0; margin:0;font-size:36px}
 
@@ -27,11 +23,7 @@ a{font-family:'Cagliostro','lucida grande',tahoma,verdana,arial,sans-serif;font-
 
 p.quote {font-family: 'Dancing Script', arial, serif; font-size: 16px;background-color: #CCC;border: 1px black solid;padding:5px;}
 
-p.box { border: 1px solid #cccccc; border-top: 4px solid #c55; padding: 1em 2em; margin-bottom: 2em; background-color:#ffffff}
-
-footer {z-index: 2;background-color: #1f6565; color:#ffffff;}
-
-#main {min-height: 535px !important; height:535px; margin-top: 1em;}
+footer {background-color: #1f6565; color:#ffffff;}
 
 ul.social {display:inline; padding:0}
 ul.social li {list-style-type: none;display:inline;padding:0}
@@ -51,7 +43,7 @@ ul.social li a img {background-image:url(images/social-sprite.png?2);height:48px
 
 .github-32x32 {background-image:url(images/octocat_32x32.png?2)}}
 
-.clear { display: block; clear: both; visibility: hidden;}
+.clear {clear: both; }
 
 a {
    color:#000;
@@ -59,6 +51,8 @@ a {
    -moz-transition:color .3s ease-in;
    -o-transition:color .3s ease-in;
    transition:color .3s ease-in;
+   display:inline-block;
+   text-align: center;
 }
 
 a:hover { color:#FFF;}
@@ -73,3 +67,6 @@ ul.social li a:hover img.imagedropshadow {
     border-radius:5px 5px 5px 5px;-moz-border-radius:5px 5px 5px 5px;-webkit-border-radius:5px 5px 5px 5px;
 }
 
+#social {width: 430px; margin-right: auto; margin-left:auto; }
+
+#main{min-height:390px; height:390px; margin-top:1em; margin-top: 10em;}
