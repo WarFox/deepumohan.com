@@ -21,6 +21,6 @@
     <body>
         <?php include "main.php"; ?>
         <?php //include ("quotes.php"); ?>
-        <?php include "footer.php"; ?>
+        <?php //include "footer.php"; ?>
     </body>
 </html>
