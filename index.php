@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
     <head>
-        <title>Personal Website of Deepu Mohan Puthrote | A Technology enthusiast</title>
+        <title>Deepu Mohan Puthrote | A Technology enthusiast</title>
         <meta charset="utf-8"/>
         <meta name="description" content="Personal Website of Deepu Mohan Puthrote, a Technology enthusiast." />
         <meta name="keywords" content="Deepu,Mohan,Puthrote,Deepu Mohan, Deepu Puthrote, Mohan Puthrote, Deepu Mohan Puthrote, Java Developer, Javascritpt Developer, PHP Developer, jQuery Developer, Technology enthusiast" />
@@ -11,17 +11,16 @@
         <meta name="resource-type" content="document" />
         <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-        <!-- style type="text/css">@import url('http://files.deepumohan.com/css/style.css');</style -->
-        <style type="text/css">@import url('files/css/style.css');</style>
+        <style type="text/css">@import url('http://files.deepumohan.com/css/style.css');</style>
 
         <script type="text/javascript" charset="utf-8" src="http://files.deepumohan.com/js/jquery.js"></script>
         <script type="text/javascript" charset="utf-8" src="http://files.deepumohan.com/js/jquery.center.js"></script>
 
-        <?php include ("analyticsTracking.php"); ?>
+        <?php include "analyticsTracking.php"; ?>
     </head>
     <body>
-        <?php include ("main.php"); ?>
+        <?php include "main.php"; ?>
         <?php //include ("quotes.php"); ?>
-        <?php include ("footer.php"); ?>
+        <?php include "footer.php"; ?>
     </body>
 </html>
