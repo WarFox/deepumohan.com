@@ -1,5 +1,3 @@
-
-    <a href="https://github.com/WarFox/deepumohan.com"><img class="github-fork" src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
     <div id="main">
         <div id="social">
             <h1>deepu mohan puthrote</h1>
@@ -11,6 +9,7 @@
                     <li><a href="http://blog.deepumohan.com" title="My Blog"><img src="http://files.deepumohan.com/css/images/transparent.gif" class="social-blogger imagedropshadow" alt="My Blog"/></a></li>
                     <li><a href="http://tech.deepumohan.com" title="My Technology Blog"><img src="http://files.deepumohan.com/css/images/transparent.gif" class="social-blogger imagedropshadow" alt="My Technology Blog"/></a></li>
                     <li><a href="https://github.com/WarFox" title="I'm on github"><img src="http://files.deepumohan.com/css/images/transparent.gif" class="social-github imagedropshadow" alt="Deepu's github page"/></a></li>
+                    <li><a href="http://deepumohanp.tumblr.com/" title="My Tumblr"><img src="http://files.deepumohan.com/css/images/transparent.gif" class="social-tumblr imagedropshadow" alt="Deepu's Tumblr Blog"/></a></li>                    
             </ul>
         </div>
     </div>
