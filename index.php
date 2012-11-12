@@ -30,7 +30,7 @@
             });
         </script>
 
-        <?php include "analyticsTracking.php"; ?>
+        <?// analytics is added by cloudflare php include "analyticsTracking.php"; ?>
     </head>
     <body>
          <div class="sigma-graph">
