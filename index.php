@@ -17,7 +17,7 @@
           .sigma-expand { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
         </style>
 
-        <script type="text/javascript" charset="utf-8" src="http://files.deepumohan.com/js/jquery.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script type="text/javascript" charset="utf-8" src="http://files.deepumohan.com/js/jquery.center.js"></script>
         <script type="text/javascript" charset="utf-8" src="http://files.deepumohan.com/js/sigma.js"></script>
         <script type="text/javascript" charset="utf-8" src="http://files.deepumohan.com/js/sigma.fisheye.js"></script>
