@@ -11,11 +11,11 @@
 */
 
 /*font import*/
-@import url(http://fonts.googleapis.com/css?family=Cagliostro);
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic);   
 
 root {margin: 0; padding: 0;display: block;}
 
-body {background-color:#f6f6f6;background-image: url('images/grain.gif');background-repeat: initial; background-position: initial; font-family:'Cagliostro'}
+body {background-color:#f6f6f6;background-image: url('images/grain.gif');background-repeat: initial; background-position: initial; font-family:'Arvo',Georgia, serif;}
 
 h1 {cursor: pointer; padding:0; margin:0;font-size:36px;
     color:#000;
