@@ -17,20 +17,35 @@ root {margin: 0; padding: 0;display: block;}
 
 body {background-color:#f6f6f6;background-image: url('images/grain.gif');background-repeat: initial; background-position: initial; font-family:'Arvo',Georgia, serif;}
 
-h1 {cursor: pointer; padding:0; margin:0;font-size:36px;
-    color:#000;
+i { 
+    font-size: 36pt; 
+    -webkit-transition: color .5s; 
+    -moz-transition: color .5s; 
+    -o-transition: color .5s; 
+    transition: color .5s; 
+    color: #231f20;
+ }
+
+i:hover { color: #0caee3; }	
+
+h1 {cursor: pointer; padding:0; margin:0;font-size:30pt;
+    color: #231f20;
    -webkit-transition:color .3s ease-in;
    -moz-transition:color .3s ease-in;
    -o-transition:color .3s ease-in;
    transition:color .3s ease-in;
    }
-h1:hover { color:#1f6565;}   
+h1:hover { color:#0caee3;}   
+
+a {text-decoration: none; color: #231f20;}
+a:visited {color: #231f20;}
+a:hover {#0caee3;}
 
 p.quote {font-family: 'Dancing Script', arial, serif; font-size: 16px;background-color: #CCC;border: 1px black solid;padding:5px;}
 
 footer {background-color: #1f6565; color:#ffffff; height:36px;}
 
-ul.social {display:inline; padding:0}
+ul.social {display:inline; padding:0; }
 ul.social li {list-style-type: none;display:inline;padding:0}
 ul.social li a img {background-image:url(images/social-sprite.png?2);height:48px;width:48px;}
 .social-facebook {background-position:0 0;}
@@ -51,19 +66,6 @@ ul.social li a img {background-image:url(images/social-sprite.png?2);height:48px
 .clear {clear: both; }
 .center {margin-left:auto; margin-right:auto;}
 
-a {
-   color:#000;
-   -webkit-transition:color .3s ease-in;
-   -moz-transition:color .3s ease-in;
-   -o-transition:color .3s ease-in;
-   transition:color .3s ease-in;
-   display:inline-block;
-   text-align: center;
-   font-size: 12px;font-variant: normal;font-style: normal;font-weight: normal;text-decoration: none;    
-}
-
-a:hover { color:#FFF;}
-
 footer a {padding-left: 32px;}
 
 .imagedropshadow { padding: 0; border: solid 1px #d1e5e3;}
@@ -74,9 +76,17 @@ ul.social li a:hover img.imagedropshadow {
     border-radius:5px 5px 5px 5px;-moz-border-radius:5px 5px 5px 5px;-webkit-border-radius:5px 5px 5px 5px;
 }
 
-#social {width: 430px; margin-right: auto; margin-left:auto; }
+#social {width: 500px; margin-right: auto; margin-left:auto; }
 
-#main{min-height:390px; height:390px; margin-top:10em;}
 #sigma-graph {height:400px; width:800px;}
 
+#main {
+    background: #fff;
+    width: 700px;
+    padding: 25px 20px;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+
+    box-shadow: 0 0 6px #ccc;
+}
 
