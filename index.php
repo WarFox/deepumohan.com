@@ -11,21 +11,10 @@
         <meta name="resource-type" content="document" />
         <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-        <style type="text/css">
+        <style type="text/css" charset="utf-8">
             @import url('/files/zurb/foundation_icons/social/stylesheets/social_foundicons.css');
             @import url('/files/zurb/foundation_icons/general/stylesheets/general_foundicons.css');
-            @import url('http://files.deepumohan.com/css/style.css');            
-        </style>
-        <style type="text/css">
-            .sigma-graph { position: relative; height: 780px; width:100%; }          
-            .sigma-expand { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-            [class*="general foundicon-"]:before {
-              font-family: "GeneralFoundicons";
-            }
-
-            [class*="social foundicon-"]:before {
-              font-family: "SocialFoundicons";
-            }          
+            @import url('css/style.css');            
         </style>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -53,19 +42,20 @@
     
         <div id="main">
             <div id="social">
-                <a href="http://deepumohan.com/"><h1>deepu mohan puthrote</h1></a>
+                <a href="http://deepumohan.com/"><h1>Deepu Mohan Puthrote</h1></a>
                 <ul class="social">
                     <a class="url" href="https://www.facebook.com/deepu.mohan.p"><i class="social foundicon-facebook"></i></a>
                     <a class="url" href="https://www.twitter.com/deepumohanp"><i class="social foundicon-twitter"></i></a>
-                    <a class="url" href="https://plus.google.com/106447761403337564868"><i class="social foundicon-googleplus"></i></a>
+                    <a class="url" href="https://plus.google.com/106447761403337564868"><i class="social foundicon-google-plus"></i></a>
                     <a class="url" href="http://www.linkedin.com/in/deepumohanp"><i class="social foundicon-linkedin"></i></a>
                     <a class="url" href="http://blog.deepumohan.com"><i class="social foundicon-wordpress"></i></a>
                     <a class="url" href="http://tech.deepumohan.com"><i class="social foundicon-wordpress"></i></a>
                     <a class="url" href="http://github.com/WarFox/"><i class="social foundicon-github"></i></a>
                     <a class="url" href="http://deepumohanp.tumblr.com/"><i class="social foundicon-tumblr"></i></a>
                     <a class="url" href="https://foursquare.com/deepumohanp/"><i class="social foundicon-foursquare"></i></a>
-                    <a class="url" href="http://instagram.com/deepumohanp/"><i class="social foundicon-instagram"></i></a>
-                </ul>
+                    <a class="url" href="http://instagram.com/deepumohanp/"><i class="social foundicon-instagram"></i></a>                    
+					<a class="url" href="cv/"><i>CV</i></a>					
+                </ul>				
             </div>
         </div>
     </body>
