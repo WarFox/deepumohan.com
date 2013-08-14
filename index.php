@@ -11,52 +11,73 @@
         <meta name="resource-type" content="document" />
         <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-        <style type="text/css" charset="utf-8">
-            @import url('/files/zurb/foundation_icons/social/stylesheets/social_foundicons.css');
-            @import url('/files/zurb/foundation_icons/general/stylesheets/general_foundicons.css');
-            @import url('css/style.css');            
-        </style>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script type="text/javascript" charset="utf-8" src="http://files.deepumohan.com/js/jquery.center.js"></script>
-        <script type="text/javascript" charset="utf-8" src="http://files.deepumohan.com/js/sigma.js"></script>
-        <script type="text/javascript" charset="utf-8" src="http://files.deepumohan.com/js/sigma.fisheye.js"></script>
-        <script type="text/javascript" charset="utf-8" src="http://files.deepumohan.com/js/sigmainit.js"></script>
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>        
 
         <script type="text/javascript" charset="utf-8">
             $(document).ready(function() {
-                 sigmaInit();
-                 $('#main').center();                 
             });
         </script>
-
-        <?// analytics is added by cloudflare php include "analyticsTracking.php"; ?>
     </head>
     <body>
-         <div class="sigma-graph">
-          <div class="sigma-parent sigma-expand">
-            <div class="sigma-expand" id="sigma-1"></div>
-          </div>    
-         <div class="sigma-expand" id="mouselayer-sigma-1"></div>
-        </div>
-    
-        <div id="main">
-            <div id="social">
-                <a href="http://deepumohan.com/"><h1>Deepu Mohan Puthrote</h1></a>
-                <ul class="social">
-                    <a class="url" href="https://www.facebook.com/deepu.mohan.p"><i class="social foundicon-facebook"></i></a>
-                    <a class="url" href="https://www.twitter.com/deepumohanp"><i class="social foundicon-twitter"></i></a>
-                    <a class="url" href="https://plus.google.com/106447761403337564868"><i class="social foundicon-google-plus"></i></a>
-                    <a class="url" href="http://www.linkedin.com/in/deepumohanp"><i class="social foundicon-linkedin"></i></a>
-                    <a class="url" href="http://blog.deepumohan.com"><i class="social foundicon-wordpress"></i></a>
-                    <a class="url" href="http://tech.deepumohan.com"><i class="social foundicon-wordpress"></i></a>
-                    <a class="url" href="http://github.com/WarFox/"><i class="social foundicon-github"></i></a>
-                    <a class="url" href="http://deepumohanp.tumblr.com/"><i class="social foundicon-tumblr"></i></a>
-                    <a class="url" href="https://foursquare.com/deepumohanp/"><i class="social foundicon-foursquare"></i></a>
-                    <a class="url" href="http://instagram.com/deepumohanp/"><i class="social foundicon-instagram"></i></a>                    
-					<a class="url" href="cv/"><i>CV</i></a>					
-                </ul>				
+          
+        <div class="circle" style="background-image: url('http://files.deepumohan.com/images/profile.jpg')"></div>
+        
+        <header class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Deepu Mohan Puthrote</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="http://blog.deepumohan.com">Personal Blog</a></li>
+                        <li><a href="http://tech.deepumohan.com">Technology Blog</a></li>
+                        <li><a href="cv/">CV</a></li>                        
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav pull-right" id="social">
+                        <li><a href="https://www.facebook.com/deepu.mohan.p"><i class="icon-facebook"></i></a><li>
+                        <li><a href="https://www.twitter.com/deepumohanp"><i class="icon-twitter"></i></a><li>
+                        <li><a href="https://plus.google.com/106447761403337564868"><i class="icon-google-plus"></i></a><li>
+                        <li><a href="http://www.linkedin.com/in/deepumohanp"><i class="icon-linkedin"></i></a><li>
+                        <li><a href="http://github.com/WarFox/"><i class="icon-github"></i></a><li>
+                        <li><a href="http://deepumohanp.tumblr.com/"><i class="icon-tumblr"></i></a><li>
+                        <li><a href="https://foursquare.com/deepumohanp/"><i class="icon-foursquare"></i></a><li>
+                        <li><a href="http://instagram.com/deepumohanp/"><i class="icon-instagram"></i></a><li>
+                    </ul>
+                </div><!--/.nav-collapse -->
             </div>
+        </header>
+
+        <div id="main" class="container">
+           <h1>About Me</h1>
+           <p class="lead">Hiya, welcome to my corner in the web. My name is Deepu and I'm very glad that you are here.</p>
+
+           <p>Born and brought up in <a href="http://en.wikipedia.org/wiki/Kozhikode">Kozhikode</a> a.k.a Calicut, in <a href="http://en.wikipedia.org/wiki/Keralam">Keralam</a>, the most beautiful place on earth. Have a  Bachelor of Technology degree in Computer Science and Engineering from <a href="http://www.universityofcalicut.info/">University of Calicut</a>, and  Masters in E-Business Information Systems from <a href="http://ncl.ac.uk">Newcastle University</a> upon Tyne.</p>
+
+           <h2>What do I do?</h2>
+           <p>
+           I work as a Software Engineer at <a href="http://collective.com">Collective</a> and I mainly work on the Java platform. I am good in Javascript, jQuery, html and css. I also like experimenting with other web related technologies like PHP, Ruby on Rails and Python. In my free time I <a href="http://en.wikipedia.org/wiki/Special:Contributions/WarFox">contribute</a> to <a href="http://wikipedia.org/">Wikipedia</a>. Lately I have been doing some stuffs in <a href="https://github.com/WarFox/">github</a> and <a href="http://jsfiddle.net/user/deepumohanp/">jsfiddle</a> - both are good and handy. People like John Resig, Eric Steven Raymond, Martin Fowler have inspired me. Lately I have developed an interest in Big Data analysis and its possible applications in e-business.</p>
+
+           <h3>More</h3>
+           <p>I don't play sports that much, but like and have tried adventure sports like Skydiving and rock climbing. Also got a chance to try out fencing, golf and ice skating. That was a great experience I had during my days in the Geordie land.</p>
+
+           <p>I have great respect for art and creativity, whether it is music, painting, movie or even graffiti. Beautiful things attracts and distracts me.</p>
         </div>
+        
+        <div class="push"><!-- clear --></div>
+        <footer class="container center">
+            <ul class="nav">
+                <li><a href="privacy-policy">Privacy Policy</a></li>
+            </ul>
+        </footer>
     </body>
 </html>
