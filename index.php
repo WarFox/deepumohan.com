@@ -36,9 +36,9 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">Deepu Mohan Puthrote</a>
-                <div class="nav-collapse collapse">
+                <div class="nav-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="http://blog.deepumohan.com">Personal Blog</a></li>
+                        <li><a href="http://blog.deepumohan.com">Personal Blog</a></li>
                         <li><a href="http://tech.deepumohan.com">Technology Blog</a></li>
                         <li><a href="cv/">CV</a></li>                        
                         <li><a href="#contact">Contact</a></li>
