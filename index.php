@@ -6,10 +6,6 @@
         <meta name="description" content="Personal Website of Deepu Mohan Puthrote, a Technology enthusiast." />
         <meta name="keywords" content="Deepu,Mohan,Puthrote,Deepu Mohan, Deepu Puthrote, Mohan Puthrote, Deepu Mohan Puthrote, Java Developer, Javascritpt Developer, PHP Developer, jQuery Developer, Technology enthusiast" />
         <meta name="author" content="Deepu Mohan Puthrote" />
-        <meta name="copyright" content="Deepu Mohan Puthrote" />
-        <meta name="classification" content="public" />
-        <meta name="resource-type" content="document" />
-        <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.0/css/font-awesome.min.css" />
         <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css" />
@@ -17,9 +13,9 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>        
-
-        <script type="text/javascript" charset="utf-8">
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+        
+        <script type="text/javascript">
             $(document).ready(function() {
             });
         </script>
