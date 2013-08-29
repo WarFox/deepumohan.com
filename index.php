@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Deepu Mohan Puthrote | A Technology enthusiast</title>
@@ -7,13 +7,13 @@
         <meta name="keywords" content="Deepu,Mohan,Puthrote,Deepu Mohan, Deepu Puthrote, Mohan Puthrote, Deepu Mohan Puthrote, Java Developer, Javascritpt Developer, PHP Developer, jQuery Developer, Technology enthusiast" />
         <meta name="author" content="Deepu Mohan Puthrote" />
 
-        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.0/css/font-awesome.min.css" />
-        <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css" />
+        <link href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css' rel='stylesheet' type='text/css'/>
+        <link href='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap.min.css' rel='stylesheet' type='text/css'/>
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js" type="text/javascript"></script>
         
         <script type="text/javascript">
             $(document).ready(function() {
@@ -40,14 +40,14 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                     <ul class="nav navbar-nav pull-right" id="social">
-                        <li><a href="https://www.facebook.com/deepu.mohan.p"><i class="icon-facebook"></i></a><li>
-                        <li><a href="https://www.twitter.com/deepumohanp"><i class="icon-twitter"></i></a><li>
-                        <li><a href="https://plus.google.com/106447761403337564868"><i class="icon-google-plus"></i></a><li>
-                        <li><a href="http://www.linkedin.com/in/deepumohanp"><i class="icon-linkedin"></i></a><li>
-                        <li><a href="http://github.com/WarFox/"><i class="icon-github"></i></a><li>
-                        <li><a href="http://deepumohanp.tumblr.com/"><i class="icon-tumblr"></i></a><li>
-                        <li><a href="https://foursquare.com/deepumohanp/"><i class="icon-foursquare"></i></a><li>
-                        <li><a href="http://instagram.com/deepumohanp/"><i class="icon-instagram"></i></a><li>
+                        <li><a href="https://www.facebook.com/deepu.mohan.p"><i class="icon-facebook"></i></a></li>
+                        <li><a href="https://www.twitter.com/deepumohanp"><i class="icon-twitter"></i></a></li>
+                        <li><a href="https://plus.google.com/106447761403337564868"><i class="icon-google-plus"></i></a></li>
+                        <li><a href="http://www.linkedin.com/in/deepumohanp"><i class="icon-linkedin"></i></a></li>
+                        <li><a href="http://github.com/WarFox/"><i class="icon-github"></i></a></li>
+                        <li><a href="http://deepumohanp.tumblr.com/"><i class="icon-tumblr"></i></a></li>
+                        <li><a href="https://foursquare.com/deepumohanp/"><i class="icon-foursquare"></i></a></li>
+                        <li><a href="http://instagram.com/deepumohanp/"><i class="icon-instagram"></i></a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
