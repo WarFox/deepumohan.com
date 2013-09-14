@@ -58,6 +58,8 @@ h1:hover, h2:hover, h3:hover, h4:hover { color:#0caee3;}
     display: block;
     width:75px;
     height:75px;
+	position: absolute;
+	top: 0;    
     -webkit-border-radius:99em;
     -moz-border-radius:99em;
     border-radius:99em;
