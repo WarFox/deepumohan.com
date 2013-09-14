@@ -10,20 +10,10 @@
         <link href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css' rel='stylesheet' type='text/css'/>
         <link href='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap.min.css' rel='stylesheet' type='text/css'/>
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js" type="text/javascript"></script>
-        
-        <script type="text/javascript">
-            $(document).ready(function() {
-            });
-        </script>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />        
     </head>
     <body>
-          
-        <div class="circle" style="background-image: url('http://files.deepumohan.com/images/profile.jpg')"></div>
-        
+
         <header class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
@@ -31,7 +21,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Deepu Mohan Puthrote</a>
+                <span class="circle"></span>
+                <a class="navbar-brand" href="#" style="padding-left: 100px;">Deepu Mohan Puthrote</a>
                 <div class="nav-collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="http://blog.deepumohan.com">Personal Blog</a></li>
@@ -75,5 +66,15 @@
                 <li><a href="privacy-policy">Privacy Policy</a></li>
             </ul>
         </footer>
+        
+        <!-- Scrpits -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+            });
+        </script>
+        
     </body>
 </html>

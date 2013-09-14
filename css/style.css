@@ -50,22 +50,20 @@ h1:hover, h2:hover, h3:hover, h4:hover { color:#0caee3;}
 
 .center {margin-left:auto; margin-right:auto;}
 
-.circle {
-  display: block;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 3px;
-  left: 5px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-border-radius: 99em;
-  -moz-border-radius: 99em;
-  border-radius: 99em;
-  border: 5px solid #eee;
-  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
-  z-index: 999999;
+.circle{
+    background-image: url('http://files.deepumohan.com/images/profile.jpg');
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    display: block;
+    width:75px;
+    height:75px;
+    -webkit-border-radius:99em;
+    -moz-border-radius:99em;
+    border-radius:99em;
+    border:2px solid #eee;
+    box-shadow:0 3px 2px rgba(0,0,0,0.3);
+    z-index:999999;
 }
 
 .clear {
