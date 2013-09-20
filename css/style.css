@@ -11,12 +11,7 @@ body {
     background-image: url('http://files.deepumohan.com/images/grain.gif');
     background-repeat: initial;
     background-position: initial;
-    padding-top: 50px;
-    
-	font-family: 'Arvo','Vollkorn',Georgia, serif, 'Trebuchet MS';
-    font-size: 11pt;
-    text-align: justify;
-	line-height: 22px;
+    font-family: 'Arvo','Vollkorn',Georgia, serif, 'Trebuchet MS';
 }
 
 i {
@@ -58,8 +53,8 @@ h1:hover, h2:hover, h3:hover, h4:hover { color:#0caee3;}
     display: block;
     width:75px;
     height:75px;
-	position: absolute;
-	top: 0;    
+    position: absolute;
+    top: 0;    
     -webkit-border-radius:99em;
     -moz-border-radius:99em;
     border-radius:99em;
@@ -78,7 +73,7 @@ h1:hover, h2:hover, h3:hover, h4:hover { color:#0caee3;}
 
 #main {
     background: #fff;
-    padding: 25px 20px;
+    padding: 120px 20px;
     margin: 0 auto 0 auto;
     box-shadow: 0 0 6px #ccc;
 }
