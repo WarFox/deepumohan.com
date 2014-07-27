@@ -1,7 +1,6 @@
-language: php
-php:
-- '5.5'
-- '5.4'
+language: ruby
+rvm:
+  - 1.9.3
 env:
   global:
   - secure: AYvY68wW/6Q+Rr4+bHiSbfQNG/mjDdnZ6fvwzN9kxowEJ+7HGEPICE340Jncp6MhpvHjW6S/xWvfK4gf0VUsnDJFZhqHu2d9hlMK55apT1wUMWR0KsTFpIsyGaDLDsZh51RYG1gvVFwAEYFbA/UUSKwSLt2G1bCM2xBkhson218=
