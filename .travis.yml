@@ -9,3 +9,8 @@ after_success:
   - "curl --ftp-create-dirs -T '{index.html,404.html,favicon.ico,sitemap.xml}' -u $FTP_USER:$FTP_PASSWORD ftp://direct.deepumohan.com/public_html/deepumohan.com/"
   - "curl --ftp-create-dirs -T '{css/style.css}' -u $FTP_USER:$FTP_PASSWORD ftp://direct.deepumohan.com/public_html/deepumohan.com/css/"
   - "curl --ftp-create-dirs -T '{privacy-policy/index.html}' -u $FTP_USER:$FTP_PASSWORD ftp://direct.deepumohan.com/public_html/deepumohan.com/privacy-policy/"
+
+# whitelist
+branches:
+  only:
+    - master
