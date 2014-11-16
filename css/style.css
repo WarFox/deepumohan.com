@@ -8,21 +8,14 @@ root {
     display: block;
 }
 html {
-    height: 100%;
-}
-body {
-    background-color: #f6f6f6;
-    background-image: url('http://files.deepumohan.com/images/grain.gif');
-    background-repeat: initial;
-    background-position: initial;
-    font-family: 'Arvo', 'Vollkorn', Georgia, serif, 'Trebuchet MS';
-}
-body {
-    background: #fff;
-}
-html {
     position: relative;
     min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: #fff;
+    font-family: Lora, Georgia, serif;
 }
 i {
     font-size: 12pt;
@@ -133,7 +126,6 @@ a:hover {
 }
 #main {
     background: #fff;
-    margin: 0 auto 0 auto;
     box-shadow: 0 0 6px #ccc;
 }
 pre {
@@ -368,14 +360,14 @@ code, kbd, tt, var {
 }
 
 .footer {
+    position: absolute;
+    bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
-    background-color: black;
-    color: #efefef;
 }
-.footer a {
-    color: #efefef;
+.footer .container {
+    border-top: solid 1px #ddd;
 }
 .navbar-toggle-dark {
     background-color: #111111;
