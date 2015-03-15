@@ -52,6 +52,7 @@ a:hover, a:active {
 }
 a img {
     border: 0;
+    vertical-align: middle;
 }
 h1, h2, h3, h4 {
     cursor: pointer;
@@ -186,22 +187,29 @@ code, kbd, tt, var {
     max-width: 140%;
 }
 /* navigation */
-.main-navigation-wrapper {
+.my-nav .container {
     border-bottom: solid 1px #ddd;
 }
-.main-navigation {
+.my-nav .menu {
     font-family: Bitter, Georgia, serif;
-    font-size: 16px;
+    font-weight: 500;
 }
-.main-navigation.collapse.in ul.menu {
+
+.my-nav .collapse.in ul.menu {
     border-top: solid 1px #ddd;
 }
-.main-navigation ul.menu>li.active a {
-    text-decoration: underline;
+
+.my-nav .collapse ul.menu>li.active a {
+    border-bottom: 3px solid #b85051;
+    margin-bottom: -3px;
 }
-.main-navigation ul>li>a:hover {
-    background-color: transparent;
-    text-decoration: underline;
+
+.my-nav .navbar-brand {
+    font-weight: 900;
+}
+
+.my-nav .navbar-header img {
+    padding-right: 5px;
 }
 /* // navigation */
 
