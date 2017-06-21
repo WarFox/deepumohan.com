@@ -3,22 +3,21 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://deepumohan.com/</loc>
+        <loc>https://deepumohan.com/</loc>
     </url>
     <url>
-        <loc>http://deepumohan.com/cv/</loc>
+        <loc>https://deepumohan.com/cv/</loc>
     </url>
     <url>
-        <loc>http://tech.deepumohan.com/</loc>
+        <loc>https://tech.deepumohan.com/</loc>
     </url>
     <url>
-        <loc>http://blog.deepumohan.com/</loc>
+        <loc>https://blog.deepumohan.com/</loc>
     </url>
     <url>
-        <loc>http://deepumohan.com/projects/word-count/</loc>
+        <loc>https://deepumohan.com/projects/word-count/</loc>
     </url>
     <url>
-        <loc>http://deepumohan.com/projects/strong-password-generator/</loc>
+        <loc>https://deepumohan.com/projects/strong-password-generator/</loc>
     </url>
 </urlset>
-
