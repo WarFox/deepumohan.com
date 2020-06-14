@@ -1,0 +1,17 @@
+{
+  "name": "deepumohan.com",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@gridsome/plugin-sitemap": "^0.4.0",
+    "@gridsome/vue-remark": "^0.2.2",
+    "gridsome": "^0.7.19"
+  },
+  "devDependencies": {
+    "gridsome-plugin-tailwindcss": "^2.2.48"
+  }
+}

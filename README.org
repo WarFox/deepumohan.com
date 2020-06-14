@@ -1,3 +1,19 @@
+[[http://spacemacs.org][file:https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg]]
+[[file:https://github.com/WarFox/deepumohan.com/.github/workflows/publish-to-s3.yml/badge.svg]]
+
 Source repository of my home page https://deepumohan.com/
 
-[[http://spacemacs.org][file:https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg]]
+** Build
+
+   #+begin_src sh
+     npm run build
+   #+end_src
+
+** Develop
+
+   #+begin_src sh
+     npm run develop
+   #+end_src
+
+   Development site will run at http://localhost:8080/
+   GraphQL data explorer will be available at http://localhost:8080/___explore/
