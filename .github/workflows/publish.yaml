@@ -33,7 +33,7 @@ jobs:
           path: dist
 
   deploy-staging:
-    if: github.ref != 'refs/heads/master'
+    if: github.ref != 'refs/heads/main'
     needs: build
     runs-on: ubuntu-20.04
 
@@ -44,7 +44,6 @@ jobs:
           name: dist
 
       - name: Configure AWS Credentials
-        if: github.ref != 'refs/heads/master'
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -59,7 +58,7 @@ jobs:
           aws s3 sync . s3://staging.deepumohan.com/
 
   deploy-production:
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-20.04
 
