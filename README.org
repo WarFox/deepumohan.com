@@ -1,5 +1,5 @@
 [[http://spacemacs.org][file:https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg]]
-[[file:https://github.com/WarFox/deepumohan.com/workflows/.github/workflows/publish-to-production.yaml/badge.svg]]
+[[file:https://github.com/WarFox/deepumohan.com/workflows/.github/workflows/publish.yaml/badge.svg]]
 
 Source repository of my home page https://deepumohan.com/
 
