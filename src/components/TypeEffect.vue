@@ -12,16 +12,17 @@ export default {
       data: [
         "Software Engineering",
         "Data Engineering",
-        "System design",
         "DevOps",
-        "frontend development",
-        "backend development",
+        "System design",
+        "Frontend development",
+        "Backend development",
+        "API design",
       ],
       dataIndex: 0,
       charIndex: 0,
-      typingSpeed: 200,
+      typingDelay: 100, // lower is faster
       erasingSpeed: 100,
-      newTextDelay: 2000,
+      newTextDelay: 1000,
     };
   },
   methods: {
@@ -30,7 +31,7 @@ export default {
         if (!this.isTyping) this.isTyping = true;
         this.typedText += this.data[this.dataIndex].charAt(this.charIndex);
         this.charIndex += 1;
-        setTimeout(this.typeText, this.typingSpeed);
+        setTimeout(this.typeText, this.typingDelay);
       } else {
         this.isTyping = false;
         setTimeout(this.eraseText, this.newTextDelay);
@@ -49,7 +50,7 @@ export default {
         this.isTyping = false;
         this.dataIndex += 1;
         if (this.dataIndex >= this.data.length) this.dataIndex = 0;
-        setTimeout(this.typeText, this.typingSpeed + 1000);
+        setTimeout(this.typeText, this.typingDelay + 1000);
       }
     },
   },
