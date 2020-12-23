@@ -23,19 +23,9 @@ export default {
 .footer {
   @apply flex items-center flex-col-reverse justify-between py-2 px-2;
 }
-@screen sm {
-  .footer {
-    @apply flex-row;
-  }
-}
 
 .footer__text {
   @apply text-gray-700 py-1 self-start text-xs;
-}
-@screen sm {
-  .footer_text {
-    @apply text-sm;
-  }
 }
 
 .footer__link {
@@ -45,7 +35,16 @@ export default {
 .footer__link:hover {
   @apply text-gray-900;
 }
+
 @screen sm {
+  .footer {
+    @apply flex-row;
+  }
+
+  .footer_text {
+    @apply text-sm;
+  }
+
   .footer__link {
     @apply pl-6;
   }

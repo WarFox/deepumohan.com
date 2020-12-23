@@ -37,7 +37,12 @@
     <nav :class="isOpen ? 'block' : 'hidden'" class="sm:block">
       <ul class="navbar__items">
         <li class="navbar__item navbar__item--first">
-          <a href="/" aria-current="page" class="active--exact navbar__link-active">Home</a>
+          <a
+            href="/"
+            aria-current="page"
+            class="active--exact navbar__link-active"
+            >Home</a
+          >
         </li>
         <li v-for="(item, index) in items" class="navbar__item">
           <a v-bind:href="item.link"> {{ item.text }} </a>
@@ -65,12 +70,7 @@ export default {
 
 <style>
 .header {
-  @apply mb-6 mt-2 items-center px-2;
-}
-@screen sm {
-  .header {
-    @apply flex justify-between;
-  }
+  @apply mb-6 mt-2 items-center px-4;
 }
 
 .navbar {
@@ -87,11 +87,6 @@ export default {
 .navbar__brand_text {
   @apply ml-3 font-semibold text-xl tracking-tight;
 }
-@screen sm {
-  .navbar__brand_text {
-    @apply ml-4;
-  }
-}
 
 .navbar__button {
   @apply block px-3 py-2 rounded text-gray-500 border border-gray-500;
@@ -106,11 +101,6 @@ export default {
 .navbar__items {
   @apply items-center;
 }
-@screen sm {
-  .navbar__items {
-    @apply flex;
-  }
-}
 
 .navbar__item {
   @apply block mt-3 ml-2 px-2;
@@ -122,13 +112,32 @@ export default {
 .navbar__item--first {
   @apply mt-0;
 }
-@screen sm {
-  .navbar__item {
-    @apply mt-0;
-  }
-}
 
 .navbar__link-active {
   @apply border-b-2;
+}
+
+@screen sm {
+  .navbar__items {
+    @apply flex;
+  }
+
+  .navbar__item {
+    @apply mt-0;
+  }
+
+  .navbar__brand_text {
+    @apply ml-4;
+  }
+
+  .header {
+    @apply flex justify-between;
+  }
+}
+
+@screen md {
+  .header {
+    @apply px-2;
+  }
 }
 </style>
