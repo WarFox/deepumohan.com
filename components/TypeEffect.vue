@@ -2,8 +2,9 @@
   <span>{{ typedText }}<span class="blinking-cursor">|</span></span>
 </template>
 
-<script>
+<script lang="ts">
 import { setTimeout } from "timers";
+
 export default {
   data: () => {
     return {
@@ -12,11 +13,11 @@ export default {
       data: [
         "Software Engineering",
         "Data Engineering",
+        "Frontend Engineering",
+        "Backend Engineering",
         "DevOps",
-        "System design",
-        "Frontend development",
-        "Backend development",
-        "API design",
+        "System Design",
+        "API Eesign",
       ],
       dataIndex: 0,
       charIndex: 0,
@@ -24,6 +25,9 @@ export default {
       erasingSpeed: 100,
       newTextDelay: 1000,
     };
+  },
+  created() {
+      setTimeout(this.typeText, this.newTextDelay + 200);
   },
   methods: {
     typeText() {
@@ -53,9 +57,6 @@ export default {
         setTimeout(this.typeText, this.typingDelay + 1000);
       }
     },
-  },
-  created() {
-    setTimeout(this.typeText, this.newTextDelay + 200);
   },
 };
 </script>

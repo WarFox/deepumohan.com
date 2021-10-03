@@ -22,9 +22,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - run: npm install
+      - run: npm ci
 
-      - run: npm run-script build
+      - run: npm run lint
+
+      - run: npm run build
+
+      - run: npm run generate
 
       - name: upload dist
         uses: actions/upload-artifact@v2

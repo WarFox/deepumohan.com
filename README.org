@@ -3,18 +3,25 @@
 
 Source repository of my home page https://deepumohan.com/
 
-** Build
+** Build Setup
 
-   #+begin_src sh
-     npm run build
-   #+end_src
+#+begin_src bash
 
-** Develop
+  # install dependencies
+  $ npm install
 
-   #+begin_src sh
-     npm run develop
-   #+end_src
+  # serve with hot reload at localhost:3000
+  $ npm run dev
 
-   Development site will run at http://localhost:8080/
+  # build for production and launch server
+  $ npm run build
+  $ npm run start
 
-   GraphQL data explorer will be available at http://localhost:8080/___explore/
+  # generate static project
+  $ npm run generate
+
+#+end_src
+
+For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+
+Development site will run at http://localhost:3000/

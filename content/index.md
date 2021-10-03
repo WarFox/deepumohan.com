@@ -1,35 +1,36 @@
-<!-- imports -->
-import TypeEffect from "~/components/TypeEffect.vue"
-import Certifications from "~/components/Certifications.vue"
-
-# Hello
-
-## My name is Deepu Mohan Puthrote
+# Hello!
 
 I'm a passionate Software Engineer from
 [Kozhikode](https://en.wikipedia.org/wiki/Kozhikode),
 [Kerala](https://en.wikipedia.org/wiki/Kerala) now living in London, UK. I like
 to take an idea, conceptualize it and make it a reality with focus on
-simplicity. I find Data Engineering, DevOps, and DataOps challenges to be
+simplicity. I find Data Engineering, DevOps, DataOps, and MLOps challenges to be
 particularly interesting.
 
 My skills include <TypeEffect/>
 
-Currently, I'm Senior Data Platform Engineer at [Funding Circle
-UK](https://fundingcircle.com/uk/). Previously, I've worked with
+Currently, I work as a Principal Engineer in the Data Platform team at [Funding
+Circle UK](https://fundingcircle.com/uk/). I take care of Data Reliability
+Engineering, orchestration tools, various tooling around democratising data
+platform for wider use and adoption in the company. Previously, I've worked with
 [Valtech](https://www.valtech.com/en-gb/),
 [Expedia](https://www.expedia.co.uk/), [Kainos](https://www.kainos.com/),
 Collective, and [JMR Infotech](https://jmrinfotech.com/).
 
-[Clojure](https://clojure.org)([Script](https://clojurescript.org)) is my
-favourite programming language and I prefer functional programming to other
-programming paradigms. However, I also work on Javascript, Typescript, Python,
-Java, Scala, Terraform and other technologies whichever fits the problem domain.
-User of Dvorak keyboard layout and emacs ([Spacemacs](http://spacemacs.org/)).
+[Clojure](https://clojure.org)([Script](https://clojurescript.org)),
+[Rust](https://www.rust-lang.org/) and
+[Typescript](https://www.typescriptlang.org/) are my top three programming
+languages and I prefer functional programming to other programming paradigms.
+However, I also work with Javascript, Python, Go, Java, Scala, Terraform and
+other technologies whichever fits the problem domain. I have been using Dvorak
+keyboard layout and emacs ([Spacemacs](http://spacemacs.org/)) since 2013.
 
-I'm an AWS Certified Solutions Architect and I enjoy designing systems that cost
-less to run. I have an M.Sc in [E-Business & Information
+I'm an [AWS Certified Solutions
+Architect](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
+and I enjoy designing systems that cost less to run. I have an M.Sc in
+[E-Business & Information
 Systems](https://www.ncl.ac.uk/postgraduate/courses/degrees/e-business-information-systems-msc/)
-from [University of Newcastle upon Tyne](https://www.ncl.ac.uk/)
+from [University of Newcastle upon Tyne](https://www.ncl.ac.uk/) in year
+2011-2012. My full cv can be found [here](/cv/).
 
 <Certifications/>

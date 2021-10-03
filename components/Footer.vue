@@ -2,22 +2,12 @@
   <footer class="footer">
     <span class="footer__text">
       <span>© Deepu Mohan Puthrote 2008 - {{ new Date().getFullYear() }}</span>
-      <g-link to="/terms" class="footer__link">Terms</g-link>
-      <g-link to="/privacy-policy" class="footer__link">Privacy</g-link>
+      <NuxtLink to="/terms/" class="footer__link">Terms</NuxtLink>
+      <NuxtLink to="/privacy-policy/" class="footer__link">Privacy</NuxtLink>
     </span>
     <Social />
   </footer>
 </template>
-
-<script>
-import Social from "~/components/Social.vue";
-
-export default {
-  components: {
-    Social,
-  },
-};
-</script>
 
 <style type="text/css">
 .footer {

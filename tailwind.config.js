@@ -1,16 +1,21 @@
-// tailwind.config.js
 module.exports = {
-  corePlugins: {
-    preflight: true,
-  },
-  purge: ["./src/**/*.html", "./src/**/*.vue"],
+  purge: [
+    './components/**/*.{vue,js}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './nuxt.config.{js,ts}',
+  ],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       zIndex: {
-        "-1": "-1",
+        '-1': '-1',
       },
     },
   },
-  variants: {},
+  variants: {
+    extend: {},
+  },
   plugins: [],
-};
+}

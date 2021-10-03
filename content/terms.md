@@ -4,4 +4,5 @@ title: Terms and Conditions
 
 # Terms and Conditions
 
-By using this website you agree to sell me your soul.
+Terms of using this website is simple and easy to understand. By using this
+website you agree to sell me your soul for free.
