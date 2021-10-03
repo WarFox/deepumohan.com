@@ -103,17 +103,17 @@
 .social__item {
   @apply pl-2;
 }
-@screen sm {
-  .social__item {
-    @apply pl-3;
-  }
-}
-
 .social__icon {
   @apply text-gray-700 fill-current inline-block h-5 w-5;
 }
 
 .social__icon:hover {
   @apply text-gray-900;
+}
+
+@screen sm {
+  .social__item {
+    @apply pl-3;
+  }
 }
 </style>

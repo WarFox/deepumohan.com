@@ -4,7 +4,13 @@ module.exports = {
     preflight: true,
   },
   purge: ["./src/**/*.html", "./src/**/*.vue"],
-  theme: {},
+  theme: {
+    extend: {
+      zIndex: {
+        "-1": "-1",
+      },
+    },
+  },
   variants: {},
   plugins: [],
 };
