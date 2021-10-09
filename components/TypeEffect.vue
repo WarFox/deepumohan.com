@@ -4,22 +4,23 @@
 
 <script lang="ts">
 import { setTimeout } from "timers";
+import Vue from "vue";
 
-export default {
-  data: () => {
+const TypeEffect = Vue.extend({
+  data() {
     return {
       typedText: "",
       isTyping: false,
-      data: [
+      items: [
         "Software Engineering",
         "Data Engineering",
         "Frontend Engineering",
         "Backend Engineering",
         "DevOps",
         "System Design",
-        "API Eesign",
+        "API Design",
       ],
-      dataIndex: 0,
+      itemIndex: 0,
       charIndex: 0,
       typingDelay: 100, // lower is faster
       erasingSpeed: 100,
@@ -27,38 +28,39 @@ export default {
     };
   },
   created() {
-      setTimeout(this.typeText, this.newTextDelay + 200);
+    setTimeout(this.typeTheText, this.newTextDelay + 200);
   },
   methods: {
-    typeText() {
-      if (this.charIndex < this.data[this.dataIndex].length) {
-        if (!this.isTyping) this.isTyping = true;
-        this.typedText += this.data[this.dataIndex].charAt(this.charIndex);
+    hasMoreChars() {
+      const { charIndex, itemIndex, items } = this;
+      return charIndex < items[itemIndex].length;
+    },
+    typeTheText() {
+      const { items, itemIndex, charIndex } = this;
+      if (this.hasMoreChars()) {
+        this.typedText += items[itemIndex].charAt(charIndex);
         this.charIndex += 1;
-        setTimeout(this.typeText, this.typingDelay);
+        setTimeout(this.typeTheText, this.typingDelay);
       } else {
-        this.isTyping = false;
         setTimeout(this.eraseText, this.newTextDelay);
       }
     },
     eraseText() {
-      if (this.charIndex > 0) {
-        if (!this.isTyping) this.isTyping = true;
-        this.typedText = this.data[this.dataIndex].substring(
-          0,
-          this.charIndex - 1
-        );
+      const { charIndex, itemIndex, items } = this;
+      if (charIndex > 0) {
+        this.typedText = items[itemIndex].substring(0, charIndex - 1);
         this.charIndex -= 1;
         setTimeout(this.eraseText, this.erasingSpeed);
       } else {
-        this.isTyping = false;
-        this.dataIndex += 1;
-        if (this.dataIndex >= this.data.length) this.dataIndex = 0;
-        setTimeout(this.typeText, this.typingDelay + 1000);
+        this.itemIndex += 1;
+        if (itemIndex >= items.length) this.itemIndex = 0;
+        setTimeout(this.typeTheText, this.typingDelay + 1000);
       }
     },
   },
-};
+});
+
+export default TypeEffect;
 </script>
 
 <style>
