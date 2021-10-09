@@ -4,15 +4,13 @@ I'm a passionate Software Engineer from
 [Kozhikode](https://en.wikipedia.org/wiki/Kozhikode),
 [Kerala](https://en.wikipedia.org/wiki/Kerala) now living in London, UK. I like
 to take an idea, conceptualize it and make it a reality with focus on
-simplicity. I find Data Engineering, DevOps, DataOps, and MLOps challenges to be
-particularly interesting.
+simplicity. Data Engineering, DevOps, DataOps, and MLOps challenges are
+interesting to me.
 
-My skills include <TypeEffect/>
-
-Currently, I work as a Principal Engineer in the Data Platform team at [Funding
-Circle UK](https://fundingcircle.com/uk/). I take care of Data Reliability
-Engineering, orchestration tools, various tooling around democratising data
-platform for wider use and adoption in the company. Previously, I've worked with
+Currently, I work as a Principal Engineer at [Funding Circle
+UK](https://fundingcircle.com/uk/). I take care of Data Reliability Engineering,
+orchestration, tooling around democratising data platform for wider use and
+adoption in the company. Previously, I've worked with
 [Valtech](https://www.valtech.com/en-gb/),
 [Expedia](https://www.expedia.co.uk/), [Kainos](https://www.kainos.com/),
 Collective, and [JMR Infotech](https://jmrinfotech.com/).
@@ -21,9 +19,10 @@ Collective, and [JMR Infotech](https://jmrinfotech.com/).
 [Rust](https://www.rust-lang.org/) and
 [Typescript](https://www.typescriptlang.org/) are my top three programming
 languages and I prefer functional programming to other programming paradigms.
-However, I also work with Javascript, Python, Go, Java, Scala, Terraform and
-other technologies whichever fits the problem domain. I have been using Dvorak
-keyboard layout and emacs ([Spacemacs](http://spacemacs.org/)) since 2013.
+However, I also work with Javascript, Python, Go, Java, Scala, Terraform, Cloud
+Formation and other technologies whichever fits the problem domain. I have been
+using Dvorak keyboard layout and emacs ([Spacemacs](http://spacemacs.org/))
+since 2013.
 
 I'm an [AWS Certified Solutions
 Architect](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
@@ -32,5 +31,7 @@ and I enjoy designing systems that cost less to run. I have an M.Sc in
 Systems](https://www.ncl.ac.uk/postgraduate/courses/degrees/e-business-information-systems-msc/)
 from [University of Newcastle upon Tyne](https://www.ncl.ac.uk/) in year
 2011-2012. My full cv can be found [here](/cv/).
+
+My skills include <TypeEffect/>
 
 <Certifications/>
