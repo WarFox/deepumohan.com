@@ -32,6 +32,8 @@ Systems](https://www.ncl.ac.uk/postgraduate/courses/degrees/e-business-informati
 from [University of Newcastle upon Tyne](https://www.ncl.ac.uk/) in year
 2011-2012. My full cv can be found [here](/cv/).
 
-My skills include <TypeEffect/>
+My skills include <TypeEffect :items='["Software Engineering",
+"Data Engineering", "Frontend Engineering", "Backend Engineering", "DevOps",
+"System Design", "API Design"]'/>
 
 <Certifications/>

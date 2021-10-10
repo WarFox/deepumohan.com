@@ -5,6 +5,7 @@
 <script lang="ts">
 import { setTimeout } from "timers";
 import Vue from "vue";
+import type { PropType } from "vue";
 
 const typingDelay = 100; // lower is faster
 const erasingDelay = 100;
@@ -15,19 +16,16 @@ function delay(ms: number) {
 }
 
 const TypeEffect = Vue.extend({
+  props: {
+    items: {
+      type: Array as PropType<string[]>,
+      default: () => [""],
+    },
+  },
   data() {
     return {
       text: "",
       index: 0,
-      items: [
-        "Software Engineering",
-        "Data Engineering",
-        "Frontend Engineering",
-        "Backend Engineering",
-        "DevOps",
-        "System Design",
-        "API Design",
-      ],
     };
   },
   created() {
@@ -53,7 +51,8 @@ const TypeEffect = Vue.extend({
       }
     },
     async eraseText() {
-      for (const _ of this.text) {
+      const { text } = this;
+      for (let i = 0; i < text.length; i++) {
         this.text = this.text.slice(0, -1);
         await delay(erasingDelay);
       }
