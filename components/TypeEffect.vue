@@ -1,16 +1,24 @@
 <template>
-  <span>{{ typedText }}<span class="blinking-cursor">|</span></span>
+  <span>{{ text }}<span class="blinking-cursor">|</span></span>
 </template>
 
 <script lang="ts">
 import { setTimeout } from "timers";
 import Vue from "vue";
 
+const typingDelay = 100; // lower is faster
+const erasingDelay = 100;
+const nextItemDelay = 1000;
+
+function delay(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 const TypeEffect = Vue.extend({
   data() {
     return {
-      typedText: "",
-      isTyping: false,
+      text: "",
+      index: 0,
       items: [
         "Software Engineering",
         "Data Engineering",
@@ -20,41 +28,42 @@ const TypeEffect = Vue.extend({
         "System Design",
         "API Design",
       ],
-      itemIndex: 0,
-      charIndex: 0,
-      typingDelay: 100, // lower is faster
-      erasingSpeed: 100,
-      newTextDelay: 1000,
     };
   },
   created() {
-    setTimeout(this.typeTheText, this.newTextDelay + 200);
+    delay(200);
+    this.typeEffect();
   },
   methods: {
-    hasMoreChars() {
-      const { charIndex, itemIndex, items } = this;
-      return charIndex < items[itemIndex].length;
-    },
-    typeTheText() {
-      const { items, itemIndex, charIndex } = this;
-      if (this.hasMoreChars()) {
-        this.typedText += items[itemIndex].charAt(charIndex);
-        this.charIndex += 1;
-        setTimeout(this.typeTheText, this.typingDelay);
-      } else {
-        setTimeout(this.eraseText, this.newTextDelay);
+    async typeEffect() {
+      while (true) {
+        await this.typeText();
+        await delay(nextItemDelay);
+        await this.eraseText();
+        await delay(nextItemDelay);
+        this.nextText();
       }
     },
-    eraseText() {
-      const { charIndex, itemIndex, items } = this;
-      if (charIndex > 0) {
-        this.typedText = items[itemIndex].substring(0, charIndex - 1);
-        this.charIndex -= 1;
-        setTimeout(this.eraseText, this.erasingSpeed);
+    async typeText() {
+      const { items, index } = this;
+      const text = items[index];
+      for (const char of text) {
+        this.text += char;
+        await delay(typingDelay);
+      }
+    },
+    async eraseText() {
+      for (const _ of this.text) {
+        this.text = this.text.slice(0, -1);
+        await delay(erasingDelay);
+      }
+    },
+    nextText() {
+      const { index, items } = this;
+      if (index < items.length - 1) {
+        this.index += 1;
       } else {
-        this.itemIndex += 1;
-        if (itemIndex >= items.length) this.itemIndex = 0;
-        setTimeout(this.typeTheText, this.typingDelay + 1000);
+        this.index = 0;
       }
     },
   },
