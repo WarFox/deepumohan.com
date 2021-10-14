@@ -4,8 +4,7 @@ I'm a passionate Software Engineer from
 [Kozhikode](https://en.wikipedia.org/wiki/Kozhikode),
 [Kerala](https://en.wikipedia.org/wiki/Kerala) now living in London, UK. I like
 to take an idea, conceptualize it and make it a reality with focus on
-simplicity. Data Engineering, DevOps, DataOps, and MLOps challenges are
-interesting to me.
+simplicity.
 
 Currently, I work as a Principal Engineer at [Funding Circle
 UK](https://fundingcircle.com/uk/). I take care of Data Reliability Engineering,
@@ -22,18 +21,16 @@ languages and I prefer functional programming to other programming paradigms.
 However, I also work with Javascript, Python, Go, Java, Scala, Terraform, Cloud
 Formation and other technologies whichever fits the problem domain. I have been
 using Dvorak keyboard layout and emacs ([Spacemacs](http://spacemacs.org/))
-since 2013.
-
-I'm an [AWS Certified Solutions
-Architect](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
-and I enjoy designing systems that cost less to run. I have an M.Sc in
-[E-Business & Information
+since 2013. I have an M.Sc in [E-Business & Information
 Systems](https://www.ncl.ac.uk/postgraduate/courses/degrees/e-business-information-systems-msc/)
 from [University of Newcastle upon Tyne](https://www.ncl.ac.uk/) in year
-2011-2012. My full cv can be found [here](/cv/).
+2011-2012.
 
-My skills include <TypeEffect :items='["Software Engineering",
-"Data Engineering", "Frontend Engineering", "Backend Engineering", "DevOps",
-"System Design", "API Design"]'/>
+## Skills
+
+Software Engineering, Data Platform Engineering, AWS, Serverless application
+design, Full Stack, DevOps, System Design. My full cv can be found [here](/cv/).
+
+## Certifications
 
 <Certifications/>
