@@ -7,7 +7,7 @@
           src="https://s.gravatar.com/avatar/f66dfe536cc7c61f0808ace8567d15db?s=48"
         />
         <span class="navbar__brand_text"
-          ><g-link to="/">Deepu Mohan Puthrote</g-link></span
+          ><NuxtLink to="/">Deepu Mohan Puthrote</NuxtLink></span
         >
       </div>
 
@@ -44,17 +44,18 @@
             >Home</a
           >
         </li>
-        <li v-for="(item, index) in items" class="navbar__item">
-          <a v-bind:href="item.link"> {{ item.text }} </a>
+        <li v-for="(item, index) in items" :key="index" class="navbar__item">
+          <a :href="item.link"> {{ item.text }} </a>
         </li>
       </ul>
     </nav>
   </header>
 </template>
 
-<script>
-export default {
-  name: "Navbar",
+<script lang="ts">
+import Vue from 'vue';
+
+const Navbar = Vue.extend({
   data() {
     return {
       isOpen: false,
@@ -65,7 +66,9 @@ export default {
       ],
     };
   },
-};
+});
+
+export default Navbar;
 </script>
 
 <style>

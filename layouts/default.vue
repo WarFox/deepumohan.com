@@ -1,30 +1,18 @@
 <template>
-  <Layout>
+  <div class="container mx-auto flex flex-col min-h-screen">
+    <Navbar />
     <main class="flex-grow content">
-      <VueRemarkContent />
+      <Nuxt />
     </main>
-  </Layout>
+    <Footer />
+  </div>
 </template>
 
-<script>
-export default {
-  metaInfo() {
-    return {
-      title: this.$page.markdownPage.title,
-    };
-  },
-};
-</script>
-
-<page-query>
-    query VueRemarkPage ($id: ID!) {
-        markdownPage(id: $id) {
-            title
-        }
-    }
-</page-query>
-
 <style type="text/css">
+body {
+  @apply bg-gray-200;
+}
+
 /*.content Styles */
 /* Global */
 
@@ -33,7 +21,8 @@ export default {
 }
 
 /* Heading */
-.content h1, h2 {
+.content h1,
+h2 {
   @apply text-base font-semibold;
 }
 
