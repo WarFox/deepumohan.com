@@ -1,5 +1,6 @@
 <template>
   <div class="self-end">
+    <h3>AWS Certified Solutions Architect Associate</h3>
     <div
       data-iframe-width="150"
       data-iframe-height="270"
@@ -13,3 +14,9 @@
     ></script>
   </div>
 </template>
+
+<style type="text/css" media="screen">
+h3 {
+  @apply text-gray-700 font-bold;
+}
+</style>
