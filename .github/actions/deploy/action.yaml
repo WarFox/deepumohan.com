@@ -1,0 +1,40 @@
+---
+name: Deploy
+
+description: Publish to Given S3 bucket
+
+inputs:
+  s3-bucket:
+    required: true
+  aws-access-key-id:
+    required: true
+  aws-secret-access-key:
+    required: true
+  role-to-assume:
+    description: Role to assume
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ inputs.aws-access-key-id }}
+        aws-secret-access-key: ${{ inputs.aws-secret-access-key }}
+        role-to-assume: ${{ inputs.role-to-assume }}
+        aws-region: eu-west-1
+        role-duration-seconds: 1200
+        role-session-name: publish-to-s3-action
+
+    - name: Download dist
+      uses: actions/download-artifact@v2
+      with:
+        name: dist
+        path: dist
+
+    - name: Sync files to S3
+      id: sync-to-s3
+      run: |
+        aws s3 sync dist ${{ inputs.s3-bucket }}
+      shell: bash

@@ -1,0 +1,84 @@
+---
+name: Deploy
+
+on:
+  push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 12
+          cache: npm
+
+      - run: npm ci
+
+      -  run: npm run lint
+
+      - name: Set BASE_URL
+        id: set-base-url
+        run: |
+          if [[ ${{ github.ref }} == refs/heads/main ]]; then
+            echo "BASE_URL=https://deepumohan.com" >> $GITHUB_ENV
+          else
+            echo "BASE_URL=https://staging.deepumohan.com" >> $GITHUB_ENV
+          fi
+
+      - run: npm run generate
+
+      - name: upload dist
+        uses: actions/upload-artifact@v2
+        with:
+          name: dist
+          path: dist
+
+  staging:
+    runs-on: ubuntu-latest
+
+    environment:
+      name: staging
+      url: https://staging.deepumohan.com
+
+    needs: build
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Deploy
+        uses: ./.github/actions/deploy
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME_STAGING }}
+          s3-bucket: s3://staging.deepumohan.com
+
+  production:
+    runs-on: ubuntu-latest
+
+    if: github.ref == 'refs/heads/main'
+
+    environment:
+      name: production
+      url: https://deepumohan.com
+
+    needs: staging
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Deploy
+        uses: ./.github/actions/deploy
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME_PRODUCTION }}
+          s3-bucket: s3://deepumohan.com
