@@ -5,7 +5,7 @@
       <NuxtLink to="/terms/" class="footer__link">Terms</NuxtLink>
       <NuxtLink to="/privacy-policy/" class="footer__link">Privacy</NuxtLink>
     </span>
-    <Social />
+    <SocialLinks />
   </footer>
 </template>
 

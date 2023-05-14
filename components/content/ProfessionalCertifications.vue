@@ -7,13 +7,21 @@
       data-share-badge-id="2a3324a3-7fb1-4e0b-a77b-cace7cf76dff"
       data-share-badge-host="https://www.youracclaim.com"
     ></div>
-    <script
-      type="application/javascript"
-      defer
-      src="https://cdn.youracclaim.com/assets/utilities/embed.js"
-    ></script>
   </div>
 </template>
+
+<script setup lang="ts">
+useHead({
+  script: [
+    {
+      type: "application/javascript",
+      defer: true,
+      src: "https://cdn.youracclaim.com/assets/utilities/embed.js",
+      tagPosition: "bodyClose",
+    },
+  ],
+});
+</script>
 
 <style type="text/css" media="screen">
 h3 {

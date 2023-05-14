@@ -2,9 +2,9 @@
   <div class="container mx-auto flex flex-col min-h-screen">
     <Navbar />
     <main class="flex-grow content">
-      <Nuxt />
+      <NuxtPage />
     </main>
-    <Footer />
+    <FooterSection />
   </div>
 </template>
 
