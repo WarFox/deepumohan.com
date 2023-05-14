@@ -36,5 +36,5 @@ runs:
     - name: Sync files to S3
       id: sync-to-s3
       run: |
-        aws s3 sync dist ${{ inputs.s3-bucket }}
+        aws s3 sync dist/public ${{ inputs.s3-bucket }}
       shell: bash
