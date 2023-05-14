@@ -48,4 +48,12 @@ export default defineNuxtConfig({
       baseURL: process.env.BASE_URL || "http://localhost:3000",
     },
   },
+
+  nitro: {
+    prerender: { crawlLinks: true, ignore: ["/tech", "/cv"] },
+  },
+
+  experimental: {
+    payloadExtraction: true,
+  },
 });
