@@ -53,9 +53,7 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-
-const Navbar = Vue.extend({
+const Navbar = {
   data() {
     return {
       isOpen: false,
@@ -66,7 +64,7 @@ const Navbar = Vue.extend({
       ],
     };
   },
-});
+};
 
 export default Navbar;
 </script>

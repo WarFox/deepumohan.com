@@ -3,8 +3,6 @@
 </template>
 
 <script lang="ts">
-import { setTimeout } from "timers";
-import Vue from "vue";
 import type { PropType } from "vue";
 
 const typingDelay = 100; // lower is faster
@@ -15,7 +13,7 @@ function delay(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-const TypeEffect = Vue.extend({
+const TypeEffect = {
   props: {
     items: {
       type: Array as PropType<string[]>,
@@ -66,7 +64,7 @@ const TypeEffect = Vue.extend({
       }
     },
   },
-});
+};
 
 export default TypeEffect;
 </script>
