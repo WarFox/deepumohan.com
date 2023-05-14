@@ -34,4 +34,4 @@ Design and Development. My full cv can be found <BaseUrlLink to="/cv">here</Base
 
 ## Certifications
 
-<Certifications/>
+<ProfessionalCertifications/>
