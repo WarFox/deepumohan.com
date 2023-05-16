@@ -1,3 +1,7 @@
+---
+title: Deepu Mohan Puthrote | Polyglot Generalist Software Engineer
+---
+
 # Hello!
 
 I'm a passionate Software Engineer from
@@ -20,7 +24,7 @@ Collective, and [JMR Infotech](https://jmrinfotech.com/).
 languages and I prefer functional programming to other programming paradigms.
 However, I also work with Javascript, Python, Go, Java, Scala, Terraform, Cloud
 Formation and other technologies whichever fits the problem domain. I have been
-using Dvorak keyboard layout and emacs ([Spacemacs](http://spacemacs.org/))
+using Dvorak keyboard layout and emacs ([Spacemacs](https://spacemacs.org/))
 since 2013. I have an M.Sc in [E-Business & Information
 Systems](https://www.ncl.ac.uk/postgraduate/courses/degrees/e-business-information-systems-msc/)
 from [University of Newcastle upon Tyne](https://www.ncl.ac.uk/) in year
@@ -30,7 +34,6 @@ from [University of Newcastle upon Tyne](https://www.ncl.ac.uk/) in year
 Software Engineering, Data Platform Engineering, Frontend Engineering, Backend
 Engineering, DevOps, System Design, AWS, Serverless application design, API
 Design and Development. My full cv can be found <BaseUrlLink to="/cv">here</BaseUrlLink>.
-
 
 ## Certifications
 

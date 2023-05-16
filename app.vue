@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto flex flex-col min-h-screen">
     <Navbar />
-    <main class="flex-grow content">
+    <main class="flex-grow content prose">
       <NuxtPage />
     </main>
     <FooterSection />
