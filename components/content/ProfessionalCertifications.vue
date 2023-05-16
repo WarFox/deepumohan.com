@@ -1,13 +1,11 @@
 <template>
-  <div class="self-end">
-    <h3>AWS Certified Solutions Architect Associate</h3>
-    <div
-      data-iframe-width="150"
-      data-iframe-height="270"
-      data-share-badge-id="2a3324a3-7fb1-4e0b-a77b-cace7cf76dff"
-      data-share-badge-host="https://www.youracclaim.com"
-    ></div>
-  </div>
+  <h3>AWS Certified Solutions Architect Associate</h3>
+  <iframe
+    data-iframe-width="150"
+    data-iframe-height="270"
+    data-share-badge-id="2a3324a3-7fb1-4e0b-a77b-cace7cf76dff"
+    data-share-badge-host="https://www.youracclaim.com"
+  ></iframe>
 </template>
 
 <script setup lang="ts">
