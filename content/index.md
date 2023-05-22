@@ -33,7 +33,7 @@ from [University of Newcastle upon Tyne](https://www.ncl.ac.uk/) in year
 ## Skills
 Software Engineering, Data Platform Engineering, Frontend Engineering, Backend
 Engineering, DevOps, System Design, AWS, Serverless application design, API
-Design and Development. My full cv can be found <BaseUrlLink to="/cv">here</BaseUrlLink>.
+Design and Development.
 
 ## Certifications
 
