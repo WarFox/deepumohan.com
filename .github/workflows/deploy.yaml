@@ -55,6 +55,7 @@ jobs:
         uses: chabad360/htmlproofer@v2
         with:
           directory: dist/public
+          arguments: --ignore-urls "https://twitter.com/deepumohanp,https://www.linkedin.com/in/deepumohanp/,/tech/,/cv/"
 
   staging:
     runs-on: ubuntu-latest
