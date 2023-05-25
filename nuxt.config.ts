@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   // Global page headers: https://nuxt.com/docs/getting-started/seo-meta
   app: {
     head: {
-      title: "Deepu Mohan Puthrote | Technology enthusiast",
+      title: "Deepu Mohan Puthrote | Polyglot Generalist Software Engineer",
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },

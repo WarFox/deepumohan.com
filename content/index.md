@@ -1,8 +1,4 @@
----
-title: Deepu Mohan Puthrote | Polyglot Generalist Software Engineer
----
-
-# Hello!
+<HeroSection>Hello!</HeroSection>
 
 I'm a passionate Software Engineer from
 [Kozhikode](https://en.wikipedia.org/wiki/Kozhikode),
