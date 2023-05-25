@@ -1,8 +1,8 @@
 <template>
   <div class="container mx-auto flex flex-col min-h-screen">
     <Navbar />
-    <main class="flex-grow content prose">
-      <NuxtPage />
+    <main class="flex-grow content">
+      <NuxtPage class="prose" />
     </main>
     <FooterSection />
   </div>

@@ -1,10 +1,10 @@
 <template>
   <ul class="social">
     <li>
-      <a href="https://www.linkedin.com/in/deepumohanp">
+      <a href="https://www.linkedin.com/in/deepumohanp/">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
+          width="1"
           height="24"
           class="social__icon"
           viewBox="0 0 24 24"
@@ -63,7 +63,7 @@
       </a>
     </li>
     <li class="social__item">
-      <a href="https://www.twitter.com/deepumohanp">
+      <a href="https://twitter.com/deepumohanp">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"

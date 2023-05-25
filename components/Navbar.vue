@@ -4,7 +4,8 @@
       <div class="navbar__brand">
         <img
           class="navbar__brand_img"
-          src="https://s.gravatar.com/avatar/f66dfe536cc7c61f0808ace8567d15db?s=48"
+          src="https://s.gravatar.com/avatar/f66dfe536cc7c61f0808ace8567d15db?s=96"
+          alt="gravatar image of deepu"
         />
         <span class="navbar__brand_text"
           ><NuxtLink to="/">Deepu Mohan Puthrote</NuxtLink></span
