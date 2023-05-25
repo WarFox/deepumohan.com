@@ -50,10 +50,6 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    prerender: { crawlLinks: true, ignore: ["/tech", "/cv"] },
-  },
-
-  experimental: {
-    payloadExtraction: true,
+    prerender: { ignore: ["/tech", "/cv"] },
   },
 });
