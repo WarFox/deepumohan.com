@@ -1,5 +1,5 @@
 [[http://spacemacs.org][file:https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg]]
-[[file:https://github.com/WarFox/deepumohan.com/workflows/.github/workflows/publish.yaml/badge.svg]]
+[[file:https://github.com/WarFox/deepumohan.com/actions/workflows/deploy.yaml/badge.svg]]
 
 Source repository of my home page https://deepumohan.com/
 
@@ -22,6 +22,7 @@ Source repository of my home page https://deepumohan.com/
 
 #+end_src
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+For detailed explanation on how things work, check out the
+[[https://nuxt.com/][nuxt documentation]].
 
 Development site will run at http://localhost:3000/
