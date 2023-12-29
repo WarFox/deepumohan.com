@@ -10,17 +10,17 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Use Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: npm
 
       - run: npm ci
 
-      -  run: npm run lint
+      - run: npm run lint
 
       - name: Set BASE_URL
         id: set-base-url
@@ -67,9 +67,6 @@ jobs:
     needs: html-proofer
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
       - name: Deploy
         uses: ./.github/actions/deploy
         with:
@@ -90,9 +87,6 @@ jobs:
     needs: staging
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
       - name: Deploy
         uses: ./.github/actions/deploy
         with:

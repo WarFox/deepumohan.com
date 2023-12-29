@@ -17,6 +17,9 @@ inputs:
 runs:
   using: composite
   steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v2
       with:
