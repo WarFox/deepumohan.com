@@ -1,0 +1,41 @@
+---
+name: Deploy
+
+on:
+  workflow_call:
+    inputs:
+      s3-bucket:
+        required: true
+        type: string
+    secrets:
+      role-to-assume:
+        required: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+            aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+            aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            role-to-assume: ${{ secrets.role-to-assume }}
+            aws-region: eu-west-1
+            role-duration-seconds: 1200
+            role-session-name: publish-to-s3-action
+
+      - name: Download dist
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist
+
+      - name: Sync files to S3
+        id: sync-to-s3
+        run: |
+          aws s3 sync dist/public s3://${{ inputs.s3-bucket }}
+        shell: bash

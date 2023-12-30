@@ -34,7 +34,7 @@ jobs:
       - run: npm run generate
 
       - name: upload dist
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: dist
           path: .output
@@ -46,7 +46,7 @@ jobs:
 
     steps:
       - name: Download dist
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: dist
           path: dist
@@ -66,14 +66,11 @@ jobs:
 
     needs: html-proofer
 
-    steps:
-      - name: Deploy
-        uses: ./.github/actions/deploy
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME_STAGING }}
-          s3-bucket: s3://staging.deepumohan.com
+    uses: ./.github/workflows/deployment.yaml
+    with:
+      s3-bucket: s3://staging.deepumohan.com
+    secrets:
+      role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME_STAGING }}
 
   production:
     runs-on: ubuntu-latest
@@ -86,11 +83,8 @@ jobs:
 
     needs: staging
 
-    steps:
-      - name: Deploy
-        uses: ./.github/actions/deploy
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME_PRODUCTION }}
-          s3-bucket: s3://deepumohan.com
+    uses: ./.github/workflows/deployment.yaml
+    with:
+      s3-bucket: s3://deepumohan.com
+    secrets:
+      role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME_PRODUCTION }}
