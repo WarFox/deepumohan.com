@@ -4,6 +4,9 @@ name: Deploy
 on:
   workflow_call:
     inputs:
+      environment:
+        required: true
+        type: string
       s3-bucket:
         required: true
         type: string
@@ -14,6 +17,11 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
+    environment:
+      name: ${{ inputs.environment }}
+      url: https://${{ inputs.s3-bucket }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4

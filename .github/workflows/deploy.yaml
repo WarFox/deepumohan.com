@@ -58,33 +58,20 @@ jobs:
           arguments: --ignore-urls "https://twitter.com/deepumohanp,https://www.linkedin.com/in/deepumohanp/,/tech/,/cv/"
 
   staging:
-    runs-on: ubuntu-latest
-
-    environment:
-      name: staging
-      url: https://staging.deepumohan.com
-
     needs: html-proofer
-
     uses: ./.github/workflows/deployment.yaml
     with:
-      s3-bucket: s3://staging.deepumohan.com
+      environment: staging
+      s3-bucket: staging.deepumohan.com
     secrets:
       role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME_STAGING }}
 
   production:
-    runs-on: ubuntu-latest
-
     if: github.ref == 'refs/heads/main'
-
-    environment:
-      name: production
-      url: https://deepumohan.com
-
     needs: staging
-
     uses: ./.github/workflows/deployment.yaml
     with:
-      s3-bucket: s3://deepumohan.com
+      environment: production
+      s3-bucket: deepumohan.com
     secrets:
       role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME_PRODUCTION }}
