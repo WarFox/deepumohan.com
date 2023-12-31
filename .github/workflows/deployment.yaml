@@ -14,6 +14,10 @@ on:
       role-to-assume:
         required: true
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -29,8 +33,6 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-            aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-            aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             role-to-assume: ${{ secrets.role-to-assume }}
             aws-region: eu-west-1
             role-duration-seconds: 1200

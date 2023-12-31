@@ -64,7 +64,7 @@ jobs:
       environment: staging
       s3-bucket: staging.deepumohan.com
     secrets:
-      role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME_STAGING }}
+      role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
 
   production:
     if: github.ref == 'refs/heads/main'
@@ -74,4 +74,4 @@ jobs:
       environment: production
       s3-bucket: deepumohan.com
     secrets:
-      role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME_PRODUCTION }}
+      role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
