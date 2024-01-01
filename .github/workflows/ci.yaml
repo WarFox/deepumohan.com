@@ -1,0 +1,77 @@
+---
+name: CI
+
+on:
+  push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run lint
+
+      - name: Set BASE_URL
+        id: set-base-url
+        run: |
+          if [[ ${{ github.ref }} == refs/heads/main ]]; then
+            echo "BASE_URL=https://deepumohan.com" >> $GITHUB_ENV
+          else
+            echo "BASE_URL=https://staging.deepumohan.com" >> $GITHUB_ENV
+          fi
+
+      - run: npm run generate
+
+      - name: upload dist
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: .output
+
+  html-proofer:
+    runs-on: ubuntu-latest
+
+    needs: build
+
+    steps:
+      - name: Download dist
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist
+
+      - name: HTMLProofer
+        uses: chabad360/htmlproofer@v2
+        with:
+          directory: dist/public
+          arguments: --ignore-urls "https://twitter.com/deepumohanp,https://www.linkedin.com/in/deepumohanp/,/tech/,/cv/"
+
+  staging:
+    needs: html-proofer
+    uses: ./.github/workflows/deploy.yaml
+    with:
+      environment: staging
+      s3-bucket: staging.deepumohan.com
+    secrets:
+      role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+
+  production:
+    if: github.ref == 'refs/heads/main'
+    needs: staging
+    uses: ./.github/workflows/deploy.yaml
+    with:
+      environment: production
+      s3-bucket: deepumohan.com
+    secrets:
+      role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
